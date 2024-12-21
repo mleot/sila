@@ -47,5 +47,14 @@ LIST @sila_repo/branches/main;
 -- SHOW CODE IN FILE
 SELECT $1 FROM @sila_repo/branches/main/create_notebook.sql;
 
--- GRANT TO SYSADMIN
+-- CREATE NOTEBOOK FROM CODE IN REPO
 EXECUTE IMMEDIATE FROM @sila_repo/branches/main/create_notebook.sql;
+
+-- SHOW NOTEBOOKS
+SHOW notebooks;
+
+-- ADD LIVE VERSION
+ALTER NOTEBOOK sila_demo_db.notebooks.pybamm ADD LIVE VERSION FROM LAST;
+
+-- EXECUTE NOTEBOOK
+EXECUTE NOTEBOOK pybamm();
