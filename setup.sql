@@ -57,4 +57,4 @@ SHOW notebooks;
 ALTER NOTEBOOK sila_demo_db.notebooks.pybamm ADD LIVE VERSION FROM LAST;
 
 -- EXECUTE NOTEBOOK
-EXECUTE NOTEBOOK pybamm();
+// EXECUTE NOTEBOOK pybamm();
