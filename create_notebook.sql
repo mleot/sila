@@ -44,7 +44,6 @@ GRANT CREATE SERVICE ON SCHEMA sila_demo_db.notebooks TO ROLE sysadmin;
 GRANT ALL ON WAREHOUSE sila_demo_wh TO ROLE sysadmin;
 GRANT READ, WRITE ON GIT REPOSITORY sila_demo_db.notebooks.sila_repo TO ROLE sysadmin;
 GRANT USAGE ON COMPUTE POOL cpu_xs_5_nodes TO ROLE sysadmin;
-GRANT USAGE ON COMPUTE POOL gpu_s_5_nodes TO ROLE sysadmin;
 GRANT USAGE ON INTEGRATION allow_all_integration TO ROLE sysadmin;
 GRANT USAGE ON INTEGRATION pypi_access_integration TO ROLE sysadmin;
 
