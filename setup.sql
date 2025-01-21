@@ -4,7 +4,7 @@ USE ROLE accountadmin;
 -- SET DATABASE SCHEMA CONTEXT
 CREATE DATABASE IF NOT EXISTS sila_demo_db;
 USE DATABASE sila_demo_db;
-CREATE SCHEMA IF NOT EXISTS sila_demo_db.notebooks
+CREATE SCHEMA IF NOT EXISTS sila_demo_db.notebooks;
 USE SCHEMA sila_demo_db.notebooks;
 
 -- SET WAREHOUSE CONTEXT
