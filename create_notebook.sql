@@ -59,7 +59,7 @@ USE WAREHOUSE sila_demo_wh;
 -- CREATE NOTEBOOK
 CREATE NOTEBOOK IF NOT EXISTS sila_demo_db.notebooks.pybamm
 FROM '@sila_repo/branches/main'
-    MAIN_FILE = 'pybamm.ipynb' 
+    MAIN_FILE = 'PyBaMM.ipynb' 
     QUERY_WAREHOUSE = sila_demo_wh
     RUNTIME_NAME = 'SYSTEM$BASIC_RUNTIME' 
     COMPUTE_POOL = 'CPU_XS_5_NODES'
